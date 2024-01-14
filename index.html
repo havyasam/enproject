@@ -9,26 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body>
-    <div class="header">
+<body id="makeblur" class="makeblur">
+  
+    <div class="header" >
         <div>
     <h2 class="enchat"><span>En</span>Chat</h2>
 </div>
 <div>
-    <button onclick="myfunction()">click me</button>
+    <button onclick="openpopup()">click me</button>
 </div>
 </div>
-<div class="main">
+<div class="main" id="main">
     <div class="head1">
     <h1 class="keep">keep <span>your</span> personal<br> conversation <span>safe</span><br> and <span>secure</span></h1>
-    <button onclick="myfunction()">click me</button>
+    <button onclick="openpopup()">click me</button>
+
 </div>
+
 <div>
     <img class="img1" src="https://media.istockphoto.com/id/1262582481/vector/chat-messages-smartphone-sms-on-mobile-phone-screen-man-woman-couple-chatting-messaging.jpg?s=612x612&w=0&k=20&c=KrRgOU5QHAoTe9NJvfu0vhRFsHxbwQRPRNAmPh4ml6Q=" alt="">
 </div>
 
 </div>
-<div class="first">
+<div class="first" id="first">
     <div class="first1">
         <h1><i class="fa-solid fa-gauge-simple-high"></i></h1>
         <h2>Fast</h2>
@@ -67,9 +70,18 @@
         
     </div>
     <div>
-        <button onclick="myfunction()">click me</button>
+        <button onclick="openpopup()">click me</button>
     </div>
 </div>
+<div class="popup" id="popup">
+    <h2>copy the below link</h2>
+    <h2>👇</h2>
+    <input type="text" id="myField" value="" />
+    <br>
+    <button type="button" onclick="closepopup()" >OK</button>
+
+</div>
+    
 <footer>
     <p>All rights are reserverd</p>
 </footer>

@@ -1,6 +1,9 @@
-body{
+
+.makeblur{
     background-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
 }
 .header{
     display: flex;
@@ -8,14 +11,27 @@ body{
     height: 90px;
     width: 100%;
     gap:60%;
-box-shadow: 1px 6px 10px rgb(93, 18, 210);
+    box-shadow: 1px 6px 10px rgb(93, 18, 210);
     border: solid 2px green;
-    
+
+
+   
 }
-.main{
+/* #makeblur{
+    z-index: -1;
+    filter: blur(10px);
+
+} */
+#popup{
+    z-index: 1;
+}
+
+#main{
     display: flex;
     justify-content: center;
     gap: 10%;
+    
+  
 }
 button{
     height: 45px;
@@ -37,12 +53,15 @@ span{
 }
 .img1{
     padding-top: 90px;
+   
 }
 .first{
     padding-top: 150px;
     display: flex;
     justify-content: center;
     gap: 300px;
+    filter: blur(0px);
+    z-index: -1;
 
 }
 .first1{
@@ -195,4 +214,64 @@ h3{
        padding-left: 100px;
     }
     
+
 } 
+.popup{
+   z-index: 10;
+    border: solid 2px black;
+    width:400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform .4s,top .4s;
+   
+}
+.open-popup{
+   
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    
+}
+input{
+    height: 30px;
+    width: 260px;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: rgb(93, 18, 210);
+    font-weight: 900;
+    font-weight:bold;
+}
+.header-blur{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    gap:60%;
+    box-shadow: 1px 6px 10px rgb(93, 18, 210);
+    border: solid 2px green;
+    filter: blur(20px);
+    z-index: -1;
+   
+}
+.main-blur{
+    
+    filter: blur(20px);
+    justify-content: end;
+   
+  
+}
+.first-blur{
+    
+    filter: blur(20px);
+    
+}
+.make-blur{
+    filter: blur(20px);
+}
