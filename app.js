@@ -1,20 +1,6 @@
 var d=crypto.randomUUID();
 document.getElementById('myField').value = d
 
-function myfunction() {
-   
-    var c=alert(d+"  <-- copy this link")
-    var e = prompt("Paste the link below");
-   
-    if(d===e){
-      window.location.href = `https://chat1-ozya.onrender.com/?id=${d}`
-      
-    }
-    else{
-      window.location.href =`https://javascript.info/`
-    }
-
-  }
  
   ScrollReveal({ 
     reset: true ,
@@ -47,7 +33,7 @@ function openpopup(){
 }
 function closepopup(){
   var e = prompt("Paste the link below");
-  var e = prompt("Paste the link below");
+  
    
   if(d===e){
     window.location.href = `https://chat1-ozya.onrender.com/?id=${d}`
